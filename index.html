@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center fixed-top">
+  <a class="navbar-brand" href="#">Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About Me</a>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#interest">Courses</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="#eperience">Experience</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#social">Achievements</a>
+      </li> 
+    </ul>
+  </div>  
+</nav>
+
+
+<div class="bg-img">
+
+<br><br>
+
+<div class="content">
+
+<div id="aboutme" class="container-fluid" style="padding-top:70px;padding-bottom:70px;background-color: azure;opacity: 0.8"><h1><center><b>ABOUT ME</b></center></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="AboutData">
+                <div class="card bg-white" >
+                    <div class="card-title my-5">
+                        <div class="media">
+                            <img src="images/prats.jpeg" width="250" height="250" class="img-fluid rounded-top mx-5 d-none d-lg-block">
+                            <div class="media-body">
+                                <h3 class="display-4">Hey There! <br> This is <i>PRATYAKSHA AMBAST</i></h3>
+                                <p class=".font-italic">Third Year Engineering Student Pursuing BE in Information Technology
+                                at Thakur College Of Engineering and Technology, Mumbai</p><br>
+                                <table class="table">
+                                   
+                                    <tbody>
+                                      <tr>
+                                        <td>Date Of Birth</td>
+                                        <td>:</td>
+                                        <td>October 11, 2000</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Phone #</td>
+                                        <td>:</td>
+                                        <td>+91 12345678970</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Email ID</td>
+                                        <td>:</td>
+                                        <td>pratyakshaambast2000@gmail.com</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <a href="mailto:pratyakshaambast2000@gmail.com" class="btn btn-primary">Send an Email</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+
+<br>
+  <div id="education" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px;opacity: 0.8;"><h1><center><b>EDUCATIONAL QUALIFICATION</b></center></h1>
+     <div class="container" style="background-color:rgb(127, 204, 255); box-shadow: 2px 2px grey;">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="background-color:rgb(127, 204, 255)">
+                    <table class="table table-bordered">
+                        <thead class="thead-light center">
+                          <tr>
+                            <th>Course</th>
+                            <th>Institute</th>
+                            <th>Board/University</th>
+                            <th>Year</th>
+                            <th>Percentage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>B.E.(
+                                Information
+                                Technology)</td>
+                            <td>Thakur
+                                College of
+                                Engineering and
+                                Technology</td>
+                            <td>Mumbai</td>
+                            <td>2018-(expected-2022)</td>
+                            <td>9.00 cgpa</td>
+                          </tr>
+                          <tr>
+                            <td>HSC</td>
+                            <td>Pace Junior Science
+                                College</td>
+                            <td>MAHARASHTRA</td>
+                            <td>2016-2018</td>
+                            <td>77.23</td>
+                          </tr>
+                          <tr>
+                            <td>SSC</td>
+                            <td>Bhavans
+                                A.H. Wadia
+                                High School</td>
+                            <td>SSC Maharashtra</td>
+                            <td>2016</td>
+                            <td>90.80</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+<br>
+  <div id="project" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px;"><h1><center><b>Technical Skill Set</b></center></h1>
+    <div class="container" >
+      
+        <div class="row">
+            <div class="col">
+              <div class="progress">
+                <div class="progress-bar" style="width:95%">HTML5</div>
+              </div><br>
+              <div class="progress">
+                <div class="progress-bar" style="width:95%">CSS3</div>
+              </div><br>
+              <div class="progress">
+                <div class="progress-bar" style="width:90%">JavaScript Programming</div>
+              </div><br>
+              <div class="progress">
+                <div class="progress-bar" style="width:90%">UI/UX Designing</div>
+              </div><br>
+              <div class="progress">
+               <div class="progress-bar" style="width:80%">PHP</div>
+              </div><br>
+              <div class="progress">
+                <div class="progress-bar" style="width:75%">MySQL</div>
+              </div><br>
+              <div class="progress">
+                <div class="progress-bar" style="width:50%">Java</div>
+              </div><br>
+              <div class="progress">
+                <div class="progress-bar" style="width:50%">Python</div>
+              </div><br>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<br>
+  <div id="interest" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px;">
+    <h2 style="text-align:center">Courses/Specialization</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/js_coursera.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/seo.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/foss.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/ux.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/htmlscratch.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/jsudemy.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/p1.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/p2.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/p3.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/p4.png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/ux2.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/website.png" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 12</div>
+          <img src="images/js_coursera.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 12</div>
+          <img src="images/seo.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 12</div>
+          <img src="images/foss.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="images/ux.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 12</div>
+          <img src="images/htmlscratch.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 12</div>
+          <img src="images/jsudemy.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 12</div>
+          <img src="images/p1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 12</div>
+          <img src="images/p2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 12</div>
+          <img src="images/p3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 12</div>
+          <img src="images/p4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 12</div>
+          <img src="images/ux2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 12</div>
+          <img src="images/website.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="images/js_coursera.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/seo.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/foss.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/ux.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/htmlscratch.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/jsudemy.png" style="width:100%" onclick="currentSlide(6)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/p1.png" style="width:100%" onclick="currentSlide(7)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/p2.png" style="width:100%" onclick="currentSlide(8)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/p3.png" style="width:100%" onclick="currentSlide(9)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/p4.png" style="width:100%" onclick="currentSlide(10)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/ux2.png" style="width:100%" onclick="currentSlide(11)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/website.png" style="width:100%" onclick="currentSlide(12)" alt="Nature and sunrise">
+        </div>
+      </div>
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+    </div>
+  </div>
+
+<br>
+  <div id="experience" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px;opacity: 0.9;"><h1><center><b>EXPERIENCE</b></center></h1>
+    <div class="contain">
+      <marquee width="100%"><img src="images/sahu.jpg" alt="Avatar" class="image"></marquee>
+      <div class="overlay">
+        <div class="text">
+          <i>My very First Internship!</i> <br> <hr>
+          A project on developing a website using HTML, CSS, Bootstrap 4. A website that provides information 
+          related to the entertainment industry and biography of various actors and actresses.<br>
+
+<b>•	KEY LEARNINGS:  </b><br>
+1)	Gained an insight on how to develop a website using HTML, CSS and the use of Bootstrap 4.<br>
+2)	For future scope was able to create a database and hence understood the connectivity using Php and MySQL.<br>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+<br>
+  <div id="social" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px; opacity: 0.9;"><h1><center><b>ACHIEVEMENTS</b></center></h1>
+  
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Extra Curricular Activities<br>(Hover Over Me!)</h2>
+          </div>
+          <div class="flip-box-back">
+            <h3><b>EXTRA CURRICULAR ACTIVITIES:</b></h3>
+
+              •	Member of NSS TCET<br>
+              •	Presented Technical Paper in MULTICON-W 2019, Thakur College Of Engineering and Technology<br>
+              •	Participated in TCET-TALK 2019<br>
+              •	Presented Technical Paper in ZEPHYR 2019, Thakur College Of Engineering and Technology<br>  
+              •	Volunteered in Maharashtra Vidhan Sabha Election 2019.<br>
+              •	Ambassador for Rethink Plastic, and awareness and sensitization workshop organized by TERI and UNEP <br>
+              •	Presented Technical Paper and Poster in MULTICON-W 2020, Thakur College Of Engineering and Technology<br>
+              
+          </div>
+        </div>
+      </div>
+<br>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Achievements<br>(Hover Over Me!)</h2>
+          </div>
+          <div class="flip-box-back">
+            <h3><b>ACHIEVEMENTS:</b><br></h3>
+
+              •	1st Rank in Ganit Sambodh Examination – 2013<br>
+              •	School Rank 1 in All India Math Science Examination 2013-2014<br>
+              •	3rd Rank at School in World Handwriting Championship<br>
+              •	Won Shri Pranlal Devkaran Nanjee Award for Excellence in Harmonious Behaviour 2014-2015<br>
+              •	Won 3rd Rank in Technical Paper Presentation Competition at MULTICON-W 2019<br>
+              • Running My YouTube Channel: <a href="https://www.youtube.com/channel/UCu0zjnhNr1hREuelzQjZD1g/featured">Browseric</a>
+              
+          </div>
+        </div>
+      </div>
+<br>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Hobbies<br>(Hover Over Me!)</h2>
+          </div>
+          <div class="flip-box-back">
+            <h3><b>Hobbies</b></h3>• Painting<br> • Playing Guitar<br> • Playing Badminton<br>• Listen to all Genres of Music<br>
+            • Running My YouTube Channel: <a href="https://www.youtube.com/channel/UCu0zjnhNr1hREuelzQjZD1g/featured">Browseric</a>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
+</div>
+
+<div class="footer">
+  <button type="button" class="btn btn-info"><a href="mailto:pratyakshaambast2000@gmail.com" style="color: black;"> | Click to Contact | </a></button>
+</div>
+
+
+</div>
+</body>
+</html>
+
+
